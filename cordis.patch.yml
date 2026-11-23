@@ -1,0 +1,13 @@
+# Bundle patch: register the plugin in a profile when the package is installed
+# as a bundle (`dsh plugin --profile <name> add ...` or a profile dependency).
+- insert:
+    - id: model-reasoning-defaults
+      name: dsh-model-reasoning-defaults
+      config:
+        enabled: true
+        efforts:
+          low: low
+          medium: medium
+          high: high
+          xhigh: xhigh
+          max: max

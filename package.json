@@ -1,0 +1,46 @@
+{
+  "name": "dsh-model-reasoning-defaults",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin: give newly imported pi-ai models a default set of reasoning-effort levels so the thinking-strength picker is never empty.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "reasoning-effort",
+    "thinking-level",
+    "pi-ai"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shichien/dsh-model-reasoning-defaults.git"
+  },
+  "homepage": "https://github.com/Shichien/dsh-model-reasoning-defaults#readme",
+  "bugs": {
+    "url": "https://github.com/Shichien/dsh-model-reasoning-defaults/issues"
+  }
+}
